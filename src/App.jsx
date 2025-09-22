@@ -52,7 +52,7 @@ Company: ${formData.company}
 Challenge: ${formData.message}
 
 Sent from braedee.how consultation form`);
-    window.location.href = `mailto:braedee@braedee.how?subject=${subject}&body=${body}`;
+    window.location.href = `mail@braedee.how?subject=${subject}&body=${body}`;
     
     setTimeout(() => {
       setIsSubmitting(false);
@@ -425,7 +425,7 @@ Sent from braedee.how consultation form`);
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-6 h-6 text-blue-400" />
-                  <span>braedee@braedee.how</span>
+                  <span>mail@braedee.how</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="w-6 h-6 text-blue-400" />
