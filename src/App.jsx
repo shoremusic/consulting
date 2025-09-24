@@ -4,61 +4,8 @@ import { Mail, MapPin, CheckCircle, Users, Award, Zap, ArrowRight, X, Menu, Down
 const BraedeeConsulting = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeModal, setActiveModal] = useState(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: ''
-  });
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-    // Clear error when user starts typing
-    if (formErrors[e.target.name]) {
-      setFormErrors({
-        ...formErrors,
-        [e.target.name]: ''
-      });
-    }
-  };
-
-  const validateForm = () => {
-    const errors = {};
-    if (!formData.name.trim()) errors.name = 'Name is required';
-    if (!formData.email.trim()) errors.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = 'Email is invalid';
-    if (!formData.message.trim()) errors.message = 'Message is required';
-    return errors;
-  };
-
-  const handleSubmit = () => {
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) {
-      setFormErrors(errors);
-      return;
-    }
-    
-    setIsSubmitting(true);
-    // Simple mailto fallback
-    const subject = encodeURIComponent('Digital Transformation Consultation - ' + formData.name);
-    const body = encodeURIComponent(`Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company}
-Challenge: ${formData.message}
-
-Sent from braedee.how consultation form`);
-    window.location.href = `mail@braedee.how?subject=${subject}&body=${body}`;
-    
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({ name: '', email: '', company: '', message: '' });
-    }, 1000);
-  };
+  // 🚀 No custom form state needed — Netlify handles form submissions now!
 
   const services = [
     {
