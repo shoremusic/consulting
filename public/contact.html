@@ -1,0 +1,31 @@
+<!-- public/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+  <!-- Netlify Form -->
+  <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+    <!-- Hidden input required by Netlify -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <p>
+      <label>Your Name: <input type="text" name="name" required /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" required /></label>
+    </p>
+    <p>
+      <label>Company: <input type="text" name="company" /></label>
+    </p>
+    <p>
+      <label>Your Message: <textarea name="message" required></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</body>
+</html>
