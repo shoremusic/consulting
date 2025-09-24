@@ -411,114 +411,124 @@ Sent from braedee.how consultation form`);
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Start Your Digital Transformation</h2>
-            <p className="text-xl text-gray-300">Book your free 30-minute consultation today</p>
+{/* Contact Section */}
+<section id="contact" className="py-20 bg-gray-900 text-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold mb-4">Start Your Digital Transformation</h2>
+      <p className="text-xl text-gray-300">Book your free 30-minute consultation today</p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-12">
+      {/* Contact Info Section */}
+      <div>
+        <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex items-center space-x-3">
+            <Mail className="w-6 h-6 text-blue-400" />
+            <span>mail@braedee.how</span>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-6 h-6 text-blue-400" />
-                  <span>mail@braedee.how</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Clock className="w-6 h-6 text-blue-400" />
-                  <span>Free 30-minute consultation available</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-6 h-6 text-blue-400" />
-                  <span>Melbourne, Australia (remote & on-site available)</span>
-                </div>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h4 className="font-bold mb-3 flex items-center">
-                  <Target className="w-5 h-5 mr-2 text-blue-400" />
-                  What We'll Cover:
-                </h4>
-                <div className="space-y-2 text-gray-300">
-                  <div>✓ Your current digital challenges and goals</div>
-                  <div>✓ Quick-win opportunities for immediate impact</div>
-                  <div>✓ Strategic roadmap for long-term transformation</div>
-                  <div>✓ Next steps and investment options</div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="bg-white p-8 rounded-xl text-gray-900">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Book Your Free Consultation</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="block text-sm font-medium mb-2">Name *</div>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent ${formErrors.name ? 'border-red-500' : 'border-gray-300'}`}
-                    />
-                    {formErrors.name && <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>}
-                  </div>
-                  <div>
-                    <div className="block text-sm font-medium mb-2">Email *</div>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent ${formErrors.email ? 'border-red-500' : 'border-gray-300'}`}
-                    />
-                    {formErrors.email && <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>}
-                  </div>
-                  <div>
-                    <div className="block text-sm font-medium mb-2">Company</div>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <div className="block text-sm font-medium mb-2">What's your biggest digital challenge? *</div>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows="4"
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent ${formErrors.message ? 'border-red-500' : 'border-gray-300'}`}
-                      placeholder="e.g., Need ISO19650 compliance for upcoming project, struggling with fragmented BIM workflows, team resistance to digital adoption..."
-                    ></textarea>
-                    {formErrors.message && <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>}
-                  </div>
-                </div>
-                <button
-                  onClick={handleSubmit}
-                  disabled={isSubmitting}
-                  className="w-full mt-6 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 flex items-center justify-center"
-                >
-                  {isSubmitting ? (
-                    <>Processing...</>
-                  ) : (
-                    <>Book Free Consultation <ArrowRight className="ml-2 w-5 h-5" /></>
-                  )}
-                </button>
-                <p className="text-xs text-gray-500 mt-2 text-center">
-                  No commitment required • Typically responds within 2 hours
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center space-x-3">
+            <Clock className="w-6 h-6 text-blue-400" />
+            <span>Free 30-minute consultation available</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <MapPin className="w-6 h-6 text-blue-400" />
+            <span>Melbourne, Australia (remote & on-site available)</span>
           </div>
         </div>
-      </section>
+
+        <div className="bg-gray-800 p-6 rounded-lg">
+          <h4 className="font-bold mb-3 flex items-center">
+            <Target className="w-5 h-5 mr-2 text-blue-400" />
+            What We'll Cover:
+          </h4>
+          <div className="space-y-2 text-gray-300">
+            <div>✓ Your current digital challenges and goals</div>
+            <div>✓ Quick-win opportunities for immediate impact</div>
+            <div>✓ Strategic roadmap for long-term transformation</div>
+            <div>✓ Next steps and investment options</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Netlify Form Section */}
+      <div>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
+          className="bg-white p-8 rounded-xl text-gray-900 shadow-lg"
+        >
+          {/* Required hidden input for Netlify */}
+          <input type="hidden" name="form-name" value="contact" />
+
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">
+            Book Your Free Consultation
+          </h3>
+
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium mb-2">Name *</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent border-gray-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">Email *</label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent border-gray-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">Company</label>
+              <input
+                type="text"
+                name="company"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">
+                What's your biggest digital challenge? *
+              </label>
+              <textarea
+                name="message"
+                required
+                rows="4"
+                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent border-gray-300"
+                placeholder="e.g., Need ISO19650 compliance, struggling with fragmented BIM workflows, team resistance to digital adoption..."
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full mt-6 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
+          >
+            Book Free Consultation
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </button>
+
+          <p className="text-xs text-gray-500 mt-2 text-center">
+            No commitment required • Typically responds within 2 hours
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-black text-gray-400 py-8">
