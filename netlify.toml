@@ -1,0 +1,7 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
+[[plugins]]
+package = "react-netlify-forms"
+package = "framer-motion"
