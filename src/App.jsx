@@ -23,7 +23,7 @@ const BraedeeConsulting = () => {
       title: 'BIM Workflow Optimization',
       headline: 'Reduce Inefficiencies, Increase Collaboration',
       description: 'Maximize efficiency and minimize risk with advanced BIM and VDC capabilities.',
-      fullDescription: 'Fragmented BIM processes cost teams time and money. I analyze your current workflows, identify bottlenecks, and create streamlined solutions that boost coordination, reduce rework, and maximize project outcomes — all while keeping teams aligned and projects on track.',
+      fullDescription: 'Fragmented BIM processes cost teams time and money. I analyse your current workflows, identify bottlenecks, and create streamlined solutions that boost coordination, reduce rework, and maximize project outcomes — all while keeping teams aligned and projects on track.',
       features: ['CDE optimization & workflows', 'Model amalgamation strategies', '4D/5D implementation', 'Custom automation development']
     },
     {
@@ -143,7 +143,7 @@ const BraedeeConsulting = () => {
               <span className="text-blue-600"> Smarter Digital Strategies</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Helping AEC organizations achieve ISO19650 compliance, streamline BIM workflows, and deliver measurable ROI through digital innovation.
+              Helping AEC organisations achieve ISO19650 compliance, streamline BIM workflows, and deliver measurable ROI through digital innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center">
@@ -161,7 +161,7 @@ const BraedeeConsulting = () => {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Digital transformation shouldn't feel overwhelming.</h2>
-          <p className="text-xl text-gray-600 mb-12">Many AEC organizations struggle to balance day-to-day delivery with the growing complexity of digital standards, workflows, and technology.</p>
+          <p className="text-xl text-gray-600 mb-12">Many AEC organisations struggle to balance day-to-day delivery with the growing complexity of digital standards, workflows, and technology.</p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {painPoints.map((point, idx) => (
@@ -209,7 +209,7 @@ const BraedeeConsulting = () => {
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How I Can Help Your Organization</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How I Can Help Your organisation</h2>
             <p className="text-xl text-gray-600">Specialized consulting services to accelerate your digital construction capabilities</p>
           </div>
           
@@ -251,7 +251,7 @@ const BraedeeConsulting = () => {
             <div className="text-center">
               <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Get a Custom Roadmap</h3>
-              <p className="text-gray-600">Receive a tailored strategy aligned to your organization's goals.</p>
+              <p className="text-gray-600">Receive a tailored strategy aligned to your organisation's goals.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
@@ -271,7 +271,7 @@ const BraedeeConsulting = () => {
           
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="text-xl leading-relaxed mb-6">
-              With over 15 years of experience driving digital transformation across Australia's largest infrastructure and construction projects, I help organizations turn complex digital challenges into practical, scalable solutions.
+              With over 15 years of experience driving digital transformation across Australia's largest infrastructure and construction projects, I help organisations turn complex digital challenges into practical, scalable solutions.
             </p>
             <p className="leading-relaxed mb-6">
               My background spans the full project lifecycle — from early design and planning through to construction and asset management — with a focus on ISO19650 alignment, BIM/VDC workflow optimization, and digital strategy leadership.
@@ -308,7 +308,7 @@ const BraedeeConsulting = () => {
                 <div className="border-l-4 border-green-600 pl-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">ISO19650 Fast-Track Implementation</h3>
                   <p className="text-gray-600 mb-2">Mid-tier contractor requiring compliance for major project bid</p>
-                  <p className="text-green-600 font-semibold">Result: Successful $45M project award, now standard across organization</p>
+                  <p className="text-green-600 font-semibold">Result: Successful $45M project award, now standard across organisation</p>
                 </div>
 
                 <div className="border-l-4 border-purple-600 pl-6">
@@ -482,7 +482,7 @@ const BraedeeConsulting = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-2xl font-bold text-white mb-2">braedee.how</div>
           <p>Digital Transformation Strategist • Melbourne, Australia</p>
-          <p className="text-sm mt-2">Helping AEC organizations achieve measurable ROI through smarter digital strategies</p>
+          <p className="text-sm mt-2">Helping AEC organisations achieve measurable ROI through smarter digital strategies</p>
         </div>
       </footer>
 
