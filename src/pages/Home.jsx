@@ -4,7 +4,6 @@ import TrustFactors from "../components/TrustFactors";
 import BioSection from "../components/BioSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ThreeStepProcess from "../components/ThreeStepProcess";
-import NetlifyForm from "../components/NetlifyForm"; // from earlier form component
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <BioSection />
       <ExperienceSection />
       <ThreeStepProcess />
-      <NetlifyForm />
     </div>
   );
 };
