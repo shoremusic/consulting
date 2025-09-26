@@ -139,25 +139,31 @@ const BraedeeConsulting = () => {
 
   const Modal = ({ service, onClose }) => (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+        
+        {/* Sticky Close Button */}
+        <button 
+          onClick={onClose} 
+          className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-lg z-50"
+        >
+          <X className="w-6 h-6" />
+        </button>
+  
         <div className="p-8">
-          <div className="flex justify-between items-start mb-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
-                {service.icon}
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
-                <p className="text-blue-600 font-semibold text-lg">{service.headline}</p>
-              </div>
+          {/* Header */}
+          <div className="flex items-center space-x-4 mb-6">
+            <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+              {service.icon}
             </div>
-            <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg">
-              <X className="w-6 h-6" />
-            </button>
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
+              <p className="text-blue-600 font-semibold text-lg">{service.headline}</p>
+            </div>
           </div>
-          
+  
+          {/* Full Description */}
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">{service.fullDescription}</p>
-          
+  
           {/* Benefits Section */}
           <div className="mb-8">
             <h4 className="text-xl font-bold text-gray-900 mb-4">Why This Matters</h4>
@@ -170,8 +176,8 @@ const BraedeeConsulting = () => {
               ))}
             </div>
           </div>
-
-          {/* What's Included */}
+  
+          {/* Deliverables Section */}
           <div className="mb-8">
             <h4 className="text-xl font-bold text-gray-900 mb-4">What's Included</h4>
             <div className="grid md:grid-cols-2 gap-4">
@@ -188,8 +194,8 @@ const BraedeeConsulting = () => {
               ))}
             </div>
           </div>
-
-          {/* Process */}
+  
+          {/* Process Section */}
           <div className="mb-8">
             <h4 className="text-xl font-bold text-gray-900 mb-4">Process</h4>
             <div className="space-y-3">
@@ -203,7 +209,7 @@ const BraedeeConsulting = () => {
               ))}
             </div>
           </div>
-
+  
           {/* Example Scenarios */}
           {service.examples && (
             <div className="mb-8">
@@ -226,12 +232,12 @@ const BraedeeConsulting = () => {
               </div>
             </div>
           )}
-
-          {/* Pricing and CTA */}
-          <div className="bg-blue-50 p-6 rounded-lg">
+  
+          {/* CTA & Close Buttons at the Bottom */}
+          <div className="bg-blue-50 p-6 rounded-lg mt-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
-                <p className="text-lg font-bold text-blue-900">Investment: {service.price}</p>
+                <p className="text-lg font-bold text-blue-900">Investment: {service.price || 'Custom Pricing'}</p>
                 <p className="text-sm text-blue-700">Free consultation included</p>
               </div>
               <div className="flex space-x-3">
@@ -244,10 +250,11 @@ const BraedeeConsulting = () => {
               </div>
             </div>
           </div>
+  
         </div>
       </div>
     </div>
-  );
+  );  
 
   return (
     <div className="min-h-screen bg-white">
@@ -368,13 +375,16 @@ const BraedeeConsulting = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, idx) => (
-              <div key={service.id} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
-                <div className={`w-12 h-12 ${idx === 0 ? 'bg-blue-100 text-blue-600' : idx === 1 ? 'bg-green-100 text-green-600' : idx === 2 ? 'bg-purple-100 text-purple-600' : 'bg-orange-100 text-orange-600'} rounded-lg flex items-center justify-center mb-4`}>
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                <p className={`${idx === 0 ? 'text-blue-600' : idx === 1 ? 'text-green-600' : idx === 2 ? 'text-purple-600' : 'text-orange-600'} font-semibold mb-3 text-sm`}>{service.headline}</p>
-                <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
+              <div key={service.id} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 flex flex-col">
+              <div className={`w-12 h-12 ${idx === 0 ? 'bg-blue-100 text-blue-600' : idx === 1 ? 'bg-green-100 text-green-600' : idx === 2 ? 'bg-purple-100 text-purple-600' : 'bg-orange-100 text-orange-600'} rounded-lg flex items-center justify-center mb-4`}>
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+              <p className={`${idx === 0 ? 'text-blue-600' : idx === 1 ? 'text-green-600' : idx === 2 ? 'text-purple-600' : 'text-orange-600'} font-semibold mb-3 text-sm`}>{service.headline}</p>
+              <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
+              
+              {/* This pushes the button to the bottom */}
+              <div className="mt-auto">
                 <button 
                   onClick={() => setActiveModal(service)}
                   className="text-blue-600 hover:text-blue-700 font-semibold text-sm inline-flex items-center"
@@ -382,8 +392,8 @@ const BraedeeConsulting = () => {
                   Learn More <ArrowRight className="ml-1 w-4 h-4" />
                 </button>
               </div>
+            </div>
             ))}
-          </div>
         </div>
       </section>
 
