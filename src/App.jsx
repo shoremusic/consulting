@@ -590,6 +590,20 @@ const BraedeeConsulting = () => {
             </div>
 
             <div>
+              <label className="block text-sm font-medium mb-2">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                pattern="^04\d{8}$"
+                placeholder="0493123456"
+                className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent border-gray-300"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                Format: 04XXXXXXXX
+              </p>
+            </div>
+
+            <div>
               <label className="block text-sm font-medium mb-2">Company</label>
               <input
                 type="text"
