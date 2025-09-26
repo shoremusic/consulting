@@ -11,123 +11,38 @@ const BraedeeConsulting = () => {
     {
       id: 'iso-compliance',
       icon: <CheckCircle className="w-6 h-6" />,
-      title: 'ISO19650 Compliance & Audit Readiness',
-      headline: 'Achieve Global Standards. Unlock Smarter Project Delivery.',
-      description: 'Essential for winning bids and meeting client expectations. Fast-track compliance in 2-4 weeks.',
-      fullDescription: 'ISO19650 compliance is no longer optional—it\'s essential for winning bids, ensuring consistent data management, and meeting client expectations. I guide your team step-by-step to establish the policies, workflows, and digital structures needed to achieve full compliance while reducing project risk and boosting operational efficiency.',
-      benefits: [
-        { title: 'Win Bigger Contracts', description: 'Many government and tier-1 projects now require ISO19650 compliance for participation.' },
-        { title: 'Reduce Risk & Rework', description: 'Standardised processes mean fewer errors, miscommunications, and costly rework.' },
-        { title: 'Future-Proof Your Business', description: 'Build a scalable, structured approach to digital project delivery.' }
-      ],
-      deliverables: [
-        { title: 'Gap Analysis', details: 'Assess your current workflows, documentation, and tools against ISO19650 requirements.' },
-        { title: 'Roadmap & Action Plan', details: 'Step-by-step plan to close gaps, with milestones and responsibilities.' },
-        { title: 'Template Pack', details: 'Customised templates for management plans, metadata standards, and digital requirements documents.' },
-        { title: 'Training & Upskilling', details: 'On-site or remote training sessions for your team.' },
-        { title: 'Audit Preparation', details: 'Mock audits and coaching to ensure readiness for formal certification.' }
-      ],
-      process: [
-        'Free Consultation (30 min) – Identify current challenges, risks, and compliance gaps.',
-        'Implementation Phase (2–6 weeks) – Document creation, workflow setup, and staff training.',
-        'Audit Simulation & Final Handover – Conduct a full run-through to guarantee confidence before certification.'
-      ],
-      examples: [
-        { situation: 'Contractor needs to meet ISO 19650 to qualify for a new tender', solution: 'Full implementation and quick-start documentation pack' },
-        { situation: 'Government project requires ISO 19650-compliant digital delivery', solution: 'Project setup, metadata standards, and model management systems' }
-      ]
+      title: 'ISO19650 Compliance & Strategy',
+      headline: 'Build Confidence with Standards that Scale',
+      description: 'Fast-track your compliance with proven methodologies. Typically 2-4 weeks, not months.',
+      fullDescription: 'ISO19650 compliance doesn\'t need to be complicated. I help teams design clear, scalable strategies for data management, collaboration, and asset lifecycle control — ensuring compliance while improving efficiency. Result: smoother audits, less risk, and consistent delivery across every project.',
+      features: ['Custom BIM execution plans', 'Staff training & change management', 'Compliance auditing & certification', 'Mock audits and readiness checks']
     },
     {
-      id: 'automation-integration',
+      id: 'workflow-optimization',
       icon: <Zap className="w-6 h-6" />,
-      title: 'Automation & System Integrations',
-      headline: 'Connect Your Systems. Automate Your Workflows. Eliminate Bottlenecks.',
-      description: 'Save hundreds of hours monthly by connecting systems and automating manual tasks.',
-      fullDescription: 'Many construction and infrastructure teams waste hundreds of hours every month on repetitive manual tasks and disconnected data workflows. I design custom automation and integrations that connect your CDEs, software platforms, and field data into one seamless ecosystem, reducing errors and unlocking productivity gains.',
-      benefits: [
-        { title: 'Save Time & Resources', description: 'Eliminate repetitive, low-value tasks so your team can focus on delivery.' },
-        { title: 'Reduce Human Error', description: 'Automations reduce risk by enforcing consistency and standards automatically.' },
-        { title: 'Connect the Entire Project', description: 'Link data between systems for real-time visibility and decision-making.' }
-      ],
-      deliverables: [
-        { title: 'Integration Design', details: 'Identify key workflows and systems to connect (e.g., CDE ↔ Revit ↔ SharePoint ↔ Power BI).' },
-        { title: 'Custom Scripts & Tools', details: 'Dynamo, Python, FME, or bespoke apps for project-specific automation.' },
-        { title: 'Data Pipelines', details: 'ETL pipelines to extract, transform, and load project data between platforms.' },
-        { title: 'IoT Connectivity', details: 'Link site sensors, GPS trackers, and field data directly into your digital models.' },
-        { title: 'Workflow Automation', details: 'Automatic reporting, dashboard updates, and quality checks.' },
-        { title: 'Documentation & Training', details: 'Clear guides and knowledge transfer so your team can maintain the solutions.' }
-      ],
-      process: [
-        'Discovery Workshop (Free) – Understand your current bottlenecks and manual processes.',
-        'Workflow Mapping & Proposal (1 week) – Identify opportunities for automation and system integration.',
-        'Build & Implement (2–4 weeks) – Develop, test, and deploy custom tools or pipelines.',
-        'Training & Support – Ensure your team has full confidence to use and maintain the new workflows.'
-      ],
-      examples: [
-        { situation: 'Manually exporting Revit schedules to Excel weekly', solution: 'Automated sync between Revit and SharePoint' },
-        { situation: 'CDE metadata doesn\'t match project BIM standards', solution: 'Python script to auto-tag files and enforce naming compliance' },
-        { situation: 'Management needs live KPIs but dashboards are outdated', solution: 'Real-time Power BI dashboards connected to CDE' }
-      ]
+      title: 'BIM Workflow Optimization',
+      headline: 'Reduce Inefficiencies, Increase Collaboration',
+      description: 'Maximize efficiency and minimize risk with advanced BIM and VDC capabilities.',
+      fullDescription: 'Fragmented BIM processes cost teams time and money. I analyse your current workflows, identify bottlenecks, and create streamlined solutions that boost coordination, reduce rework, and maximize project outcomes — all while keeping teams aligned and projects on track.',
+      features: ['CDE optimization & workflows', 'Model amalgamation strategies', '4D/5D implementation', 'Custom automation development']
     },
     {
-      id: 'bim-maturity',
+      id: 'digital-transformation',
       icon: <TrendingUp className="w-6 h-6" />,
-      title: 'BIM Maturity Assessments & Digital Capability Reviews',
-      headline: 'Know Where You Stand. Build the Digital Foundation to Grow.',
-      description: 'Get a clear picture of your digital maturity with actionable roadmaps for improvement.',
-      fullDescription: 'You can\'t improve what you can\'t measure. My BIM maturity assessments give you a clear picture of where your organization or project currently sits on the digital spectrum, where the gaps are, and exactly what steps to take to reach higher BIM capability levels. This isn\'t just theory — it\'s a practical roadmap to ISO19650 compliance, improved workflows, and measurable project ROI.',
-      benefits: [
-        { title: 'Clear Benchmarking', description: 'Understand your current digital strengths and weaknesses.' },
-        { title: 'Actionable Roadmap', description: 'Get specific, prioritized recommendations to achieve your goals.' },
-        { title: 'Reduced Risk', description: 'Identify compliance and data issues before they impact projects.' }
-      ],
-      deliverables: [
-        { title: 'Digital Capability Survey', details: 'Staff interviews, workflow analysis, and technology audit.' },
-        { title: 'Standards Review', details: 'Assessment against ISO19650, VDAS, NATSPEC, ABAB, or project-specific requirements.' },
-        { title: 'Maturity Scorecard', details: 'Visual breakdown across key areas: Process, People, Technology, and Data.' },
-        { title: 'Gap Analysis Report', details: 'Identify weaknesses and their potential project impacts.' },
-        { title: 'Implementation Roadmap', details: 'Step-by-step plan to move up the BIM maturity ladder.' }
-      ],
-      process: [
-        'Initial Discovery (Free) – Short consultation to understand your context and goals.',
-        'Data Gathering & Interviews (1–2 weeks) – Collect information from teams, software, and current documentation.',
-        'Analysis & Reporting (1 week) – Deliver a clear report with scores, risks, and recommendations.',
-        'Strategy Workshop (Optional) – Facilitate a workshop with leadership to align on the roadmap.'
-      ],
-      examples: [
-        { situation: 'Mid-tier contractor unsure if they can deliver a BIM-compliant project', solution: 'Full capability review, identify gaps, create a 90-day improvement plan' },
-        { situation: 'Executive team wants ROI clarity on digital investments', solution: 'Dashboards and metrics showing improvement potential' }
-      ]
+      title: 'Digital Transformation Roadmaps',
+      headline: 'Future-Proof Your Digital Strategy',
+      description: 'Develop clear, actionable strategies that align people, processes, and technology.',
+      fullDescription: 'Technology is only as powerful as the strategy behind it. Together, we\'ll develop a clear, actionable roadmap that aligns your people, processes, and technology — helping you stay ahead of industry trends while achieving tangible, measurable ROI.',
+      features: ['Digital process mapping & redesign', 'Manual-to-digital migration', 'Business intelligence dashboards', 'IoT & data integration strategies']
     },
     {
       id: 'training-upskilling',
       icon: <Users className="w-6 h-6" />,
-      title: 'BIM Training & Capability Development',
+      title: 'Training & Upskilling',
       headline: 'Empower Your Team to Embrace Change',
       description: 'Transform your team\'s capabilities with hands-on training that actually sticks.',
-      fullDescription: 'Digital adoption succeeds when teams feel confident. I design and deliver tailored training programs to bridge skill gaps, boost buy-in, and ensure long-term success for your digital transformation initiatives. From BIM fundamentals to advanced automation, training is available in multiple formats to suit your team\'s needs.',
-      benefits: [
-        { title: 'Accelerated Adoption', description: 'Teams become confident with new tools and processes faster.' },
-        { title: 'Reduced Resistance', description: 'Proper training eliminates fear and builds enthusiasm for digital change.' },
-        { title: 'Sustained Success', description: 'Long-term capability building ensures ongoing digital maturity growth.' }
-      ],
-      deliverables: [
-        { title: 'BIM Fundamentals', details: 'Intro to BIM/VDAS, ISO19650 compliance, and digital delivery workflows.' },
-        { title: 'Advanced Software Training', details: 'Revit, Civil3D, Navisworks, Synchro, and CDE administration.' },
-        { title: 'Automation Skills', details: 'Data automation with Dynamo, FME, and AI/ML in construction.' },
-        { title: 'Custom Curricula', details: 'Tailored learning paths for your specific project needs and software stack.' },
-        { title: 'Flexible Delivery', details: 'Virtual or in-person, group workshops, 1-on-1 coaching, or self-paced materials.' }
-      ],
-      process: [
-        'Skills Assessment – Evaluate current team capabilities and identify knowledge gaps.',
-        'Custom Curriculum Design – Develop training program aligned to your goals and timeline.',
-        'Training Delivery – Execute workshops, coaching sessions, or structured learning programs.',
-        'Knowledge Transfer & Support – Ensure lasting retention with ongoing support and resources.'
-      ],
-      examples: [
-        { situation: 'Team struggling with new ISO19650 requirements', solution: 'Comprehensive compliance training with hands-on workflow practice' },
-        { situation: 'Junior staff need advanced BIM skills quickly', solution: 'Intensive software training with project-specific exercises' }
-      ]
+      fullDescription: 'Digital adoption succeeds when teams feel confident. I design and deliver tailored training programs to bridge skill gaps, boost buy-in, and ensure long-term success for your digital transformation initiatives.',
+      features: ['Executive briefings on ROI', 'ISO19650 compliance training', 'Advanced software training', 'Custom learning curricula']
     }
   ];
 
@@ -139,16 +54,16 @@ const BraedeeConsulting = () => {
 
   const Modal = ({ service, onClose }) => (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-        <div className="p-8">
-          <div className="flex justify-between items-start mb-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+      <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="p-6">
+          <div className="flex justify-between items-start mb-4">
+            <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
                 {service.icon}
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
-                <p className="text-blue-600 font-semibold text-lg">{service.headline}</p>
+                <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
+                <p className="text-blue-600 font-semibold">{service.headline}</p>
               </div>
             </div>
             <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg">
@@ -156,93 +71,25 @@ const BraedeeConsulting = () => {
             </button>
           </div>
           
-          <p className="text-gray-600 mb-8 text-lg leading-relaxed">{service.fullDescription}</p>
+          <p className="text-gray-600 mb-6 text-lg leading-relaxed">{service.fullDescription}</p>
           
-          {/* Benefits Section */}
-          <div className="mb-8">
-            <h4 className="text-xl font-bold text-gray-900 mb-4">Why This Matters</h4>
-            <div className="grid md:grid-cols-3 gap-4">
-              {service.benefits.map((benefit, idx) => (
-                <div key={idx} className="bg-blue-50 p-4 rounded-lg">
-                  <h5 className="font-bold text-blue-900 mb-2">{benefit.title}</h5>
-                  <p className="text-blue-800 text-sm">{benefit.description}</p>
-                </div>
+          <div className="mb-6">
+            <h4 className="font-bold text-gray-900 mb-3">What's Included:</h4>
+            <ul className="space-y-2">
+              {service.features.map((feature, idx) => (
+                <li key={idx} className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">{feature}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
-
-          {/* What's Included */}
-          <div className="mb-8">
-            <h4 className="text-xl font-bold text-gray-900 mb-4">What's Included</h4>
-            <div className="grid md:grid-cols-2 gap-4">
-              {service.deliverables.map((deliverable, idx) => (
-                <div key={idx} className="border border-gray-200 p-4 rounded-lg">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h5 className="font-semibold text-gray-900 mb-1">{deliverable.title}</h5>
-                      <p className="text-gray-600 text-sm">{deliverable.details}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Process */}
-          <div className="mb-8">
-            <h4 className="text-xl font-bold text-gray-900 mb-4">Process</h4>
-            <div className="space-y-3">
-              {service.process.map((step, idx) => (
-                <div key={idx} className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                    {idx + 1}
-                  </div>
-                  <p className="text-gray-700 pt-1">{step}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Example Scenarios */}
-          {service.examples && (
-            <div className="mb-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Example Scenarios</h4>
-              <div className="space-y-4">
-                {service.examples.map((example, idx) => (
-                  <div key={idx} className="bg-gray-50 p-4 rounded-lg">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <h5 className="font-semibold text-gray-900 mb-2">Situation:</h5>
-                        <p className="text-gray-700 text-sm">{example.situation}</p>
-                      </div>
-                      <div>
-                        <h5 className="font-semibold text-gray-900 mb-2">Solution:</h5>
-                        <p className="text-blue-700 text-sm font-medium">{example.solution}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Pricing and CTA */}
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-4 md:mb-0">
-                <p className="text-lg font-bold text-blue-900">Investment: {service.price}</p>
-                <p className="text-sm text-blue-700">Free consultation included</p>
-              </div>
-              <div className="flex space-x-3">
-                <a href="#contact" onClick={onClose} className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center font-semibold">
-                  Book Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-                <button onClick={onClose} className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
-                  Close
-                </button>
-              </div>
-            </div>
+          
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <p className="text-sm text-blue-800 mb-3">Ready to get started with {service.title.toLowerCase()}?</p>
+            <a href="#contact" onClick={onClose} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center">
+              Book Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
           </div>
         </div>
       </div>
