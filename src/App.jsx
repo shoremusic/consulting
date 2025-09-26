@@ -137,132 +137,128 @@ const BraedeeConsulting = () => {
     'Our teams are resistant to change — technology isn\'t sticking.'
   ];
 
-  const Modal = ({ service, onClose }) => {
-    return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
-          {/* Sticky Close Button */}
-          <button 
-            onClick={onClose} 
-            className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-lg z-50"
-          >
-            <X className="w-6 h-6" />
-          </button>
-  
-          <div className="p-8">
-            {/* Header */}
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
-                {service.icon}
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
-                <p className="text-blue-600 font-semibold text-lg">{service.headline}</p>
-              </div>
-            </div>
-  
-            {/* Full Description */}
-            <p className="text-gray-600 mb-8 text-lg leading-relaxed">{service.fullDescription}</p>
-  
-            {/* Benefits Section */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Why This Matters</h4>
-              <div className="grid md:grid-cols-3 gap-4">
-                {service.benefits.map((benefit, idx) => (
-                  <div key={idx} className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-900 mb-2">{benefit.title}</h5>
-                    <p className="text-blue-800 text-sm">{benefit.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-  
-            {/* Deliverables Section */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">What's Included</h4>
-              <div className="grid md:grid-cols-2 gap-4">
-                {service.deliverables.map((deliverable, idx) => (
-                  <div key={idx} className="border border-gray-200 p-4 rounded-lg">
-                    <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h5 className="font-semibold text-gray-900 mb-1">{deliverable.title}</h5>
-                        <p className="text-gray-600 text-sm">{deliverable.details}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-  
-            {/* Process Section */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Process</h4>
-              <div className="space-y-3">
-                {service.process.map((step, idx) => (
-                  <div key={idx} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                      {idx + 1}
-                    </div>
-                    <p className="text-gray-700 pt-1">{step}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-  
-            {/* Example Scenarios */}
-            {service.examples && (
-              <div className="mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Example Scenarios</h4>
-                <div className="space-y-4">
-                  {service.examples.map((example, idx) => (
-                    <div key={idx} className="bg-gray-50 p-4 rounded-lg">
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div>
-                          <h5 className="font-semibold text-gray-900 mb-2">Situation:</h5>
-                          <p className="text-gray-700 text-sm">{example.situation}</p>
-                        </div>
-                        <div>
-                          <h5 className="font-semibold text-gray-900 mb-2">Solution:</h5>
-                          <p className="text-blue-700 text-sm font-medium">{example.solution}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-  
-            {/* CTA & Close Buttons at the Bottom */}
-            <div className="bg-blue-50 p-6 rounded-lg mt-4">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="mb-4 md:mb-0">
-                  <p className="text-lg font-bold text-blue-900">Investment: {service.price || 'Custom Pricing'}</p>
-                  <p className="text-sm text-blue-700">Free consultation included</p>
-                </div>
-                <div className="flex space-x-3">
-                  <a 
-                    href="#contact" 
-                    onClick={onClose} 
-                    className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center font-semibold"
-                  >
-                    Book Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
-                  <button 
-                    onClick={onClose} 
-                    className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-  
+  const Modal = ({ service, onClose }) => (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative p-8">
+        
+        {/* Header */}
+        <div className="flex items-center space-x-4 mb-6">
+          <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+            {service.icon}
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
+            <p className="text-blue-600 font-semibold text-lg">{service.headline}</p>
           </div>
         </div>
+  
+        {/* Full Description */}
+        <p className="text-gray-600 mb-8 text-lg leading-relaxed">{service.fullDescription}</p>
+  
+        {/* Benefits */}
+        <div className="mb-8">
+          <h4 className="text-xl font-bold text-gray-900 mb-4">Why This Matters</h4>
+          <div className="grid md:grid-cols-3 gap-4">
+            {service.benefits.map((benefit, idx) => (
+              <div key={idx} className="bg-blue-50 p-4 rounded-lg">
+                <h5 className="font-bold text-blue-900 mb-2">{benefit.title}</h5>
+                <p className="text-blue-800 text-sm">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+  
+        {/* Deliverables */}
+        <div className="mb-8">
+          <h4 className="text-xl font-bold text-gray-900 mb-4">What's Included</h4>
+          <div className="grid md:grid-cols-2 gap-4">
+            {service.deliverables.map((deliverable, idx) => (
+              <div key={idx} className="border border-gray-200 p-4 rounded-lg">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h5 className="font-semibold text-gray-900 mb-1">{deliverable.title}</h5>
+                    <p className="text-gray-600 text-sm">{deliverable.details}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+  
+        {/* Process */}
+        <div className="mb-8">
+          <h4 className="text-xl font-bold text-gray-900 mb-4">Process</h4>
+          <div className="space-y-3">
+            {service.process.map((step, idx) => (
+              <div key={idx} className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  {idx + 1}
+                </div>
+                <p className="text-gray-700 pt-1">{step}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+  
+        {/* Example Scenarios */}
+        {service.examples && (
+          <div className="mb-8">
+            <h4 className="text-xl font-bold text-gray-900 mb-4">Example Scenarios</h4>
+            <div className="space-y-4">
+              {service.examples.map((example, idx) => (
+                <div key={idx} className="bg-gray-50 p-4 rounded-lg">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <h5 className="font-semibold text-gray-900 mb-2">Situation:</h5>
+                      <p className="text-gray-700 text-sm">{example.situation}</p>
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900 mb-2">Solution:</h5>
+                      <p className="text-blue-700 text-sm font-medium">{example.solution}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+  
+        {/* CTA Section */}
+        <div className="bg-blue-50 p-6 rounded-lg mt-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <p className="text-lg font-bold text-blue-900">Investment: {service.price || 'Custom Pricing'}</p>
+              <p className="text-sm text-blue-700">Free consultation included</p>
+            </div>
+            <div className="flex space-x-3">
+              <a
+                href="#contact"
+                onClick={onClose}
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center font-semibold"
+              >
+                Book Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+              <button
+                onClick={onClose}
+                className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+  
       </div>
-    );
-  };  
+    </div>
+  );  
 
   return (
     <div className="min-h-screen bg-white">
