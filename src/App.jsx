@@ -75,10 +75,10 @@ const BraedeeConsulting = () => {
       title: 'BIM Maturity Assessments & Digital Capability Reviews',
       headline: 'Know Where You Stand. Build the Digital Foundation to Grow.',
       description: 'Get a clear picture of your digital maturity with actionable roadmaps for improvement.',
-      fullDescription: 'You can\'t improve what you can\'t measure. My BIM maturity assessments give you a clear picture of where your organization or project currently sits on the digital spectrum, where the gaps are, and exactly what steps to take to reach higher BIM capability levels. This isn\'t just theory — it\'s a practical roadmap to ISO19650 compliance, improved workflows, and measurable project ROI.',
+      fullDescription: 'You can\'t improve what you can\'t measure. My BIM maturity assessments give you a clear picture of where your organisation or project currently sits on the digital spectrum, where the gaps are, and exactly what steps to take to reach higher BIM capability levels. This isn\'t just theory — it\'s a practical roadmap to ISO19650 compliance, improved workflows, and measurable project ROI.',
       benefits: [
         { title: 'Clear Benchmarking', description: 'Understand your current digital strengths and weaknesses.' },
-        { title: 'Actionable Roadmap', description: 'Get specific, prioritized recommendations to achieve your goals.' },
+        { title: 'Actionable Roadmap', description: 'Get specific, prioritised recommendations to achieve your goals.' },
         { title: 'Reduced Risk', description: 'Identify compliance and data issues before they impact projects.' }
       ],
       deliverables: [
@@ -377,7 +377,7 @@ const BraedeeConsulting = () => {
               How I Can Help Your organisation
             </h2>
             <p className="text-xl text-gray-600">
-              Specialized consulting services to accelerate your digital construction capabilities
+              Specialised consulting services to accelerate your digital construction capabilities
             </p>
           </div>
 
@@ -476,7 +476,7 @@ const BraedeeConsulting = () => {
               With over 15 years of experience driving digital transformation across Australia's largest infrastructure and construction projects, I help organisations turn complex digital challenges into practical, scalable solutions.
             </p>
             <p className="leading-relaxed mb-6">
-              My background spans the full project lifecycle — from early design and planning through to construction and asset management — with a focus on ISO19650 alignment, BIM/VDC workflow optimization, and digital strategy leadership.
+              My background spans the full project lifecycle — from early design and planning through to construction and asset management — with a focus on ISO19650 alignment, BIM/VDC workflow optimisation, and digital strategy leadership.
             </p>
             <p className="leading-relaxed mb-8">
               I've led teams managing 100TB+ of federated BIM data, authored industry-standard processes like the Western Program Alliance Survey Management Plan, and delivered innovative KPIs such as the first successful augmented reality rollout within Victoria's Level Crossing Removal Project, training over 170+ professionals.
